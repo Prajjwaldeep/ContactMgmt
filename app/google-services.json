@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350144087860",
+    "project_id": "contacts-dd76e",
+    "storage_bucket": "contacts-dd76e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350144087860:android:4923fc6d70da00080d4761",
+        "android_client_info": {
+          "package_name": "com.sbdev.contactmgmt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoqzzhk20Fg3XpjCaPB8UAHvPtPl8ESAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

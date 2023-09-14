@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/contacts_icon"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            app:endIconMode="clear_text"
+            android:id="@+id/registerEmailTIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableStart="@drawable/ic_outline_email_24"
+                android:drawablePadding="10dp"
+                android:id="@+id/registerEmailET"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            app:endIconMode="password_toggle"
+            android:layout_below="@id/registerEmailTIL"
+            android:layout_marginTop="20sp"
+            android:id="@+id/registerPassTIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:drawableStart="@drawable/ic_outline_lock_24"
+                android:drawablePadding="10dp"
+                android:id="@+id/registerPassET"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/registerPassTIL"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="131dp"
+            android:background="@drawable/style"
+            android:text="Register"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnRegister"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/registerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:text="Already user?"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
